@@ -1,6 +1,12 @@
+h2 Local Weather Conditions For Your Area
+/ #htmlformtags
 = @conditions
 = @sun 
 - @tendayforecast.each do |day|  
   p = day
-= @alerts
+- if @alerts.any?
+  - @alerts.each do |a|
+     = a 
+- else 
+  p No Alerts In Your Area
 = @hurricanes
