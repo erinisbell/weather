@@ -30,7 +30,7 @@ module Weather
     def alerts
       result = "http://api.wunderground.com/api/#{KEY}/alerts/q/#{@code}.json"
       url = HTTParty.get(result)
-      alerts2 = url['message']
+      alerts2 = url['alerts']
       [alerts2]
     end
 
@@ -61,6 +61,6 @@ module Weather
         i += 2
       end
       str
-    end    
+    end
   end
 end
