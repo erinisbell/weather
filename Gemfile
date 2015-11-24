@@ -14,6 +14,7 @@ gem 'rails', '4.2.4'
 gem 'rails_12factor'
 gem 'sass-rails', '~> 5.0'
 gem 'slim'
+gem 'sqlite3'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 
