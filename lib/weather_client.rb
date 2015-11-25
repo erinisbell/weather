@@ -23,13 +23,6 @@ module Weather
       sunrise2 = url['sun_phase']['sunrise']['minute']
       pmtime = url['sun_phase']['sunset']['hour']
       pmtime2 = url['sun_phase']['sunset']['minute']
-      # year = 2015
-      # month = 11
-      # day = 24
-      # hour =
-      # minute =
-      # sunrise = DateTime.new(year,month,day,hour,minute)
-      # sunset= DateTime.new(year,month,day,hour,minute)
       [sunrise, sunrise2, pmtime, pmtime2]
     end
 

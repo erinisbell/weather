@@ -1,5 +1,4 @@
 require 'weather_client'
-
 class ReportsController < ApplicationController
 
   def index

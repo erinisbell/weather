@@ -1,4 +1,11 @@
+
 .welcome Welcome to Weather! 
+p Please select the zip code for which you would like the weather for
+= text_field_tag :weather, nil, class: 'search', placeholder: 'Zip Code'
+p 
+  a href="http://localhost:5000/reports/" title='Weather Report' Submit
+/ li = link_to 'Account', '#account', data: { toggle: 'tab' }'
+
 
 / h5 When someone calls a zipcode it should be saved to the database to reference later
 / h5 should save a list of all zipcodes that have been created 
