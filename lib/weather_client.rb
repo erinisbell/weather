@@ -2,8 +2,7 @@ require 'HTTParty'
 module Weather
   class Client
     include HTTParty
-    KEY = ENV['dark_sky_key']
-result = "https://api.forecast.io/forecast/#{KEY}/LATITUDE,LONGITUDE"
+    KEY = ENV['weather_underground_key']
 
     def initialize code
       @code = code
