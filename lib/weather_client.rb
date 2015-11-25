@@ -2,7 +2,8 @@ require 'HTTParty'
 module Weather
   class Client
     include HTTParty
-    KEY = ENV['weather_underground_key']
+    KEY = ENV['dark_sky_key']
+result = "https://api.forecast.io/forecast/#{KEY}/LATITUDE,LONGITUDE"
 
     def initialize code
       @code = code
@@ -30,7 +31,7 @@ module Weather
       # minute =
       # sunrise = DateTime.new(year,month,day,hour,minute)
       # sunset= DateTime.new(year,month,day,hour,minute)
-      # sunrise, sunset
+      [sunrise, sunrise2, pmtime, pmtime2]
     end
 
 
