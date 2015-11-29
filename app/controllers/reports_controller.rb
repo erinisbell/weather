@@ -1,8 +1,9 @@
 require 'weather_client'
 class ReportsController < ApplicationController
 
-  def index
-  end
+  # def index
+  #   @client = Client.all
+  # end
 
   def new
   report = Report.new
@@ -16,5 +17,10 @@ class ReportsController < ApplicationController
      @tendayforecast = client.tendayforecast
      @alerts = client.alerts
      @hurricanes = client.hurricanes
+  end
+
+  private
+  def report_params
+    params.require(:report).permit(:id)
   end
 end
