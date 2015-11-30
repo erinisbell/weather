@@ -2,17 +2,22 @@
  *= require_self
 
  */
-@import "bourbon";
-// @import "base/base";
+@import 'bourbon';
 @import "neat";
 
- * {
-  font-family: Helvetica;
-  @include background-image(url("/images/cloud.png"));
+body {
+  @include background-image(image-url("cloud.png"));
   background-position: center;
+  background-size: cover;
 }
 
  .welcome {
    text-align: center;
-   color: blue;
+   color: black;
+   font-size: 32;
+   background: none;
  }
+
+.input {
+  position: center;
+}

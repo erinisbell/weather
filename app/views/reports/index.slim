@@ -1,5 +1,5 @@
 .welcome Welcome to Weather!
-p Please select the zip code for which you would like the weather for
+p.input Please input a valid zipcode for a weather report:
 = form_tag('/', method: :get) do
   = text_field_tag :id
   = submit_tag "Submit"
