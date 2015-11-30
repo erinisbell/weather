@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151125191425) do
+ActiveRecord::Schema.define(version: 20151130193110) do
 
   create_table "clients", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -19,8 +19,11 @@ ActiveRecord::Schema.define(version: 20151125191425) do
   end
 
   create_table "reports", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.float    "conditions"
+    t.datetime "sun"
+    t.float    "tendayforecast"
   end
 
 end
