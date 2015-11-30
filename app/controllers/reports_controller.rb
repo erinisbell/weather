@@ -16,7 +16,7 @@ class ReportsController < ApplicationController
 
   def show
      client = Weather::Client.new(params[:id])
-     @conditions = client.conditions
+     @conditions = client.conditions.join (',')
      @sun = client.sun
      @tendayforecast = client.tendayforecast
      @alerts = client.alerts

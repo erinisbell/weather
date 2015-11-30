@@ -4,7 +4,7 @@ h2 Local Weather Conditions For Your Area
 p Today's sunrise will be at #{@sun[0]}:#{@sun[1]}
 p Today's sunset will be at #{@sun[2]}:#{@sun[3]}
 - @tendayforecast.each do |day|  
-  p = day
+  p = day.join (',')
 - if @alerts.any?
   - @alerts.each do |a|
      = a 
