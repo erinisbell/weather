@@ -1,14 +1,10 @@
-.welcome Welcome to Weather! 
+.welcome Welcome to Weather!
 p Please select the zip code for which you would like the weather for
-= form_for report_path(:id), method: "GET" do |f|
-  = f.text_field :id, placeholder: 'Zip Code'
-  = f.submit "Submit"
-  
-/ - form_tag("/search", method: "get")
-/   = label_tag(:q, "Search for:")
-/   = text_field_tag(:q)
-/   = submit_tag("Search")
+= form_tag('/', method: :get) do
+  = text_field_tag :id
+  = submit_tag "Submit"
 
+= link_to '/' "Back"
 / h5 When someone calls a zipcode it should be saved to the database to reference later
 / h5 should save a list of all zipcodes that have been created 
 / h5 have a url that has url/reports/create(new?) and then save that 

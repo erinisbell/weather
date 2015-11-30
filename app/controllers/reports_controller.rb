@@ -1,12 +1,16 @@
 require 'weather_client'
 class ReportsController < ApplicationController
 
-  # def index
-  #   @client = Client.all
-  # end
+  def index
+    if params[:id]
+      redirect_to report_path(params[:id])
+    else
+      @reports = Report.all
+    end
+  end
 
   def new
-  report = Report.new
+  @report = Report.new
   end
 
 

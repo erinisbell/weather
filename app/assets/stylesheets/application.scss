@@ -8,7 +8,7 @@
 
  * {
   font-family: Helvetica;
-  @include background(url("/images/cloud.png"));
+  @include background-image(url("/images/cloud.png"));
   background-position: center;
 }
 
