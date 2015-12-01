@@ -1,4 +1,4 @@
-require 'HTTParty'
+require 'httparty'
 module Weather
   class Client
     include HTTParty
