@@ -13,15 +13,19 @@ body {
 
  .welcome {
    text-align: center;
-   color: black;
+   color: white;
    font-size: 32;
    background: none;
+   text-shadow: 1px 1px gray;
+   margin-top: 11px;
  }
 
 .input {
   margin-left: 477px;
   margin-top: 110px;
   font-size: 22;
+  color: white;
+  text-shadow: 1px 1px gray;
 }
 
 .submit {
